@@ -1,0 +1,32 @@
+<ion-view class="reg-fiscalizacao" view-title="Diario de Bordo">
+	<ion-content>
+		<div class="list">
+			<div class="item item-divider fiscalizacao-title" >
+				<img class="icon-routes" src="img/icons/inspection.png">
+				<p>Fiscalização</p>
+			</div>
+			<div class="item fiscalizacao-reg">
+				<div class="list">
+					<label class="item item-input item-stacked-label">
+						<span class="input-label">Data</span>
+						<input type="date" ng-model="info.date">
+					</label>
+
+					<label class="item item-input item-stacked-label">
+						<span class="input-label">Hora</span>
+						<input type="time" ng-model="info.hora">
+					</label>
+
+					<label class="item item-input item-stacked-label">
+						<span class="input-label">Fiscalização</span>
+						<input type="text" ng-model="info.tipo" placeholder="Informe o tipo de fiscalização">
+					</label>
+				</div>
+			</div>
+		</div>
+		<div class="btn-footer">
+			<button class="button button-block btn-cancelar" ui-sref="menu.fiscalizacao"> Cancelar </button>
+			<button class="button button-block btn-salvar" ng-click="fiscalizacao()"> Salvar </button>
+		</div>
+	</ion-content>
+</ion-view>

@@ -1,0 +1,65 @@
+.ocorrencia-abastecimento {
+	.list {
+		min-height: 600px;
+		.abastecimento-title {
+			background-color: #DF9E2E;
+			.icon-routes {
+				width: 10%;
+				display: block;
+				float: left;
+				margin-left: 15px;
+			}
+
+			p {
+				text-align: center;
+				font-size: 24px;
+				color: #fff;
+				display: table-cell;
+				vertical-align: middle;
+				height: 40px;
+				width: 53%;
+			}
+		}
+		.abastecimento-cabecalho {
+			margin: 0;
+			padding: 0;
+			background-color: #DEDADA;
+			.col {
+				font-size: 14px;
+
+				color: #868a8c;
+			}
+		}
+	}
+	.btn-footer {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+
+		.btn-novo {
+			width: 80%;
+			margin-left: 9%;
+			border-color: transparent;
+			border-radius: 0;
+			background-color: #49E25E;
+			color: #fff;
+
+			&:hover {
+				color: #fff;
+			}
+		}
+
+		.btn-voltar {
+			width: 80%;
+			margin-left: 9%;
+			border-color: transparent;
+			border-radius: 0;
+			background-color: #FFD95E;
+			color: #fff;
+
+			&:hover {
+				color: #fff;
+			}
+		}
+	}
+}

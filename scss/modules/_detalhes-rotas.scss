@@ -1,0 +1,68 @@
+.detalhes-rotas {
+	background-color: #E4E4E4;
+	.icon-routes {
+		width: 50%;
+		margin-left: 25%;
+	}
+
+	ul {
+		li {
+			border: 0;
+			padding: 7px;
+			background-color: #E4E4E4;
+			text-align: center;
+		}
+	}
+
+	.btn-adicionar {
+		width: 80%;
+		margin-left: 9%;
+		border-color: transparent;
+		border-radius: 0;
+		background-color: #1E8CBE;
+		color: #fff;
+
+		&:hover {
+			color: #fff;
+		}
+	}
+
+	.btn-iniciar {
+		width: 80%;
+		margin-left: 9%;
+		border-color: transparent;
+		border-radius: 0;
+		background-color: #49E25E;
+		color: #fff;
+
+		&:hover {
+			color: #fff;
+		}
+	}
+
+	.btn-voltar {
+		width: 80%;
+		margin-left: 9%;
+		border-color: transparent;
+		border-radius: 0;
+		background-color: #FFD95E;
+		color: #fff;
+
+		&:hover {
+			color: #fff;
+		}
+	}
+
+	.btn-remover {
+		width: 80%;
+		margin-left: 9%;
+		border-color: transparent;
+		border-radius: 0;
+		background-color: #FF4848;
+		color: #fff;
+
+		&:hover {
+			color: #fff;
+		}
+	}
+}

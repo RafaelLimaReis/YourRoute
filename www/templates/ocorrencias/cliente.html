@@ -1,0 +1,42 @@
+<ion-view class="ocorrencia-cliente" view-title="Diario de Bordo" ng-init="getCliente()">
+	<ion-content>
+		<div class="list">
+			<div class="item item-divider cliente-title" >
+				<img class="icon-routes" src="img/icons/person.png">
+				<p>Cliente</p>
+			</div>
+			<div class="item cliente-cabecalho">
+				<div class="row">
+					<div class="col">
+						Data
+					</div>
+					<div class="col">
+						Hora
+					</div>
+					<div class="col">
+						Observação
+					</div>
+				</div>
+
+				<div class="row" ng-repeat="cliente in info">
+					<div class="col">
+						{{cliente.date | date: 'dd/MM/yyyy'}}
+					</div>
+					<div class="col">
+						{{cliente.hora | date: 'HH:mm'}}
+					</div>
+					<div class="col">
+						{{cliente.observacao}}
+					</div>
+					<div class="col">
+						<button class="button icon ion-trash-a" ng-click="deleteCliente(cliente)"></button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="btn-footer">
+			<button class="button button-block btn-novo" ui-sref="menu.cadCliente"> Inserir Novo Registro </button>
+			<button class="button button-block btn-voltar" ui-sref="menu.ocorrencias"> Voltar </button>
+		</div>
+	</ion-content>
+</ion-view>

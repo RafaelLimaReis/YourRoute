@@ -1,0 +1,51 @@
+<ion-view class="ocorrencia-manutencao" view-title="Diario de Bordo" ng-init="getManutencao()">
+	<ion-content>
+		<div class="list">
+			<div class="item item-divider manutencao-title" >
+				<img class="icon-routes" src="img/icons/tools.png">
+				<p>Manutenção de Veículos</p>
+			</div>
+			<div class="item manutencao-cabecalho">
+				<div class="row">
+					<div class="col">
+						Data
+					</div>
+					<div class="col">
+						Hora
+					</div>
+					<div class="col">
+						Valor
+					</div>
+					<div class="col">
+						Serviço
+					</div>
+					<div class="col">
+
+					</div>
+				</div>
+
+				<div class="row" ng-repeat="manutencao in info">
+					<div class="col">
+						{{manutencao.date | date: 'dd/MM/yyyy'}}
+					</div>
+					<div class="col">
+						{{manutencao.hora | date: 'HH:mm'}}
+					</div>
+					<div class="col">
+						{{manutencao.valor}}
+					</div>
+					<div class="col">
+						{{manutencao.tipo}}
+					</div>
+					<div class="col">
+						<button class="button icon ion-trash-a" ng-click="deleteManutencao(manutencao)"></button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="btn-footer">
+		<button class="button button-block btn-novo" ui-sref="menu.cadManutencao"> Inserir Novo Registro </button>
+			<button class="button button-block btn-voltar" ui-sref="menu.ocorrencias"> Voltar </button>
+		</div>
+	</ion-content>
+</ion-view>

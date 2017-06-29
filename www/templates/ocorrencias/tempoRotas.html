@@ -1,0 +1,51 @@
+<ion-view class="ocorrencia-tempo" view-title="Diario de Bordo" ng-init="getTempoRotas()">
+	<ion-content>
+		<div class="list">
+		  <div class="item item-divider tempo-title">
+				<img class="icon-routes" src="img/icons/history.png">
+ 				<p>Tempo Rota</p>
+		  </div>
+			<div class="item tempo-cabecalho">
+				<div class="row">
+					<div class="col">
+						Data
+					</div>
+					<div class="col">
+						Hora
+					</div>
+					<div class="col">
+						Inicio | Fim
+					</div>
+					<div class="col">
+						Local
+					</div>
+					<div class="col">
+
+					</div>
+				</div>
+
+				<div class="row" ng-repeat="tempo in info">
+					<div class="col">
+						{{tempo.date | date: 'dd/MM/yyyy'}}
+					</div>
+					<div class="col">
+						{{tempo.hora | date: 'HH:mm'}}
+					</div>
+					<div class="col">
+						{{tempo.status}}
+					</div>
+					<div class="col">
+						{{tempo.local}}
+					</div>
+					<div class="col">
+							<button class="button icon ion-trash-a" ng-click="deleteTempoRota(tempo)"></button>
+					</div>
+				</div>
+			</div>
+	</div>
+	<div class="btn-footer">
+		<button class="button button-block btn-novo" ui-sref="menu.cadTempoRota"> Inserir Novo Registro </button>
+    	<button class="button button-block btn-voltar" ui-sref="menu.ocorrencias"> Voltar </button>
+    </div>
+	</ion-content>
+</ion-view>

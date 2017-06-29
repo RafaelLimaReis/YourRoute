@@ -1,0 +1,50 @@
+.minhas-rotas {
+	background-color: #E4E4E4;
+	.btn-ordernar {
+		border-color: transparent;
+		background-color: #1E8CBE;
+		color: #fff;
+		width: 100%;
+		height: 55px;
+		margin: 0;
+		border-radius: 0;
+	}
+
+	.list-routes {
+		border: 1px #fff solid;
+		.item-content {
+			background-color: #E4E4E4;
+
+			.icon-routes {
+				width: 18%;
+				float: left;
+				margin-top: 10px;
+				margin-right: 20px;
+			}
+
+			ul {
+				float: left;
+				padding-left: 20px;
+				color: #878787;
+				border-left: 1px #95989A solid;
+			}
+		}
+		.item-options {
+			border-color: transparent;
+			background-color: #FFDC4E;
+			color: #fff;
+			width: 25%;
+
+			.btn-info {
+				border-color: transparent;
+				background-color: #FFDC4E;
+				color: #fff;
+
+				i {
+					padding-left: 25px;
+					color: #000;
+				}
+			}
+		}
+	}
+}

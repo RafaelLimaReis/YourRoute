@@ -1,0 +1,57 @@
+<ion-nav-bar class="bar bar-header bar-stable">
+	<ion-nav-buttons side="left">
+		<button class="button button-icon ion-navicon-round" menu-toggle></button>
+	</ion-nav-buttons>
+	<ion-nav-title>
+    <h1 class="title">Menu Ocorrências</h1>
+  </ion-nav-title>
+</ion-nav-bar>
+<ion-view class="menu-ocorrencias" view-title="Diario de Bordo">
+	<ion-content>
+		<ion-list class="diario-bordo">
+			<div class="row">
+				<ion-item ui-sref="menu.tempoRotas" class="tempo">
+					<img class="icon-routes" src="img/icons/history.png">
+					<p>Tempo Rota</p>
+				</ion-item>
+				<ion-item ui-sref="menu.cargaDescarga" class="carga">
+					<img class="icon-routes" src="img/icons/inbox.png">
+					<p>Carga e Descarga</p>
+				</ion-item>
+			</div>
+			<div class="row">
+				<ion-item ui-sref="menu.alimentacao" class="alimentacao">
+					<img class="icon-routes" src="img/icons/beer.png">
+					<p>Alimentação</p>
+				</ion-item>
+				<ion-item ui-sref="menu.descansoPernoite" class="pernoite">
+					<img class="icon-routes" src="img/icons/zap.png">
+					<p>Descanço e Pernoite</p>
+				</ion-item>
+			</div>
+			<div class="row">
+				<ion-item ui-sref="menu.manutencao" class="manutencao">
+					<img class="icon-routes" src="img/icons/tools.png">
+					<p>Manutenção de Veiculos</p>
+				</ion-item>
+				<ion-item ui-sref="menu.abastecimento" class="abastecimento">
+					<img class="icon-routes" src="img/icons/supply.png">
+					<p>Abastecimento</p>
+				</ion-item>
+			</div>
+			<div class="row">
+				<ion-item ui-sref="menu.fiscalizacao" class="fiscalizacao">
+					<img class="icon-routes" src="img/icons/inspection.png">
+					<p>Fiscalização</p>
+				</ion-item>
+				<ion-item ui-sref="menu.cliente" class="cliente">
+					<img class="icon-routes" src="img/icons/person.png">
+					<p>Cliente</p>
+				</ion-item>
+			</div>
+		</ion-list>
+		<button class="button button-block btn-voltar" ui-sref="menu.route">
+			Voltar
+		</button>
+	</ion-content>
+</ion-view>

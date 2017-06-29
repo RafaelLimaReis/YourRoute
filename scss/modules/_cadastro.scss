@@ -1,0 +1,96 @@
+.cadastro {
+	background: url('../img/cadastro.png') no-repeat;
+	width: 100%;
+
+	.logo {
+		p {
+			font-size: 0px;
+		}
+
+		img {
+			width: 150%;
+			left: -23%;
+			position: absolute;
+		}
+	}
+
+	.list-inset {
+		width: 75%;
+		left: 9%;
+		opacity: 0.9;
+	}
+
+	.item-input {
+		border-radius: 5px !important;
+		border-color: transparent;
+
+		input {
+			text-align: center;
+			font-size: 16px;
+		}
+
+		i {
+			font-size: 20px;
+			padding-right: 0;
+		}
+	}
+
+	.cpf {
+		margin-top: 77%;
+
+		@media (max-width: 360px) {
+			margin-top: 70%;
+		}
+		@media (max-height: 565px) {
+			margin-top: 50%;
+		}
+		@media (min-width: 680px) {
+			margin-top: 60%;
+		}
+	}
+
+	.row {
+		display: block;
+		text-align: center;
+
+		@media (min-width: 680px) {
+			margin-top: 180px;
+		}
+	}
+
+	.btn-cadastrar {
+		width: 50%;
+		border-color: transparent;
+		background-color: #96F978;
+		color: #fff;
+
+		&:hover {
+			color: #fff;
+		}
+	}
+
+	.btn-voltar {
+		width: 50%;
+		margin-top: 15px;
+		border-color: transparent;
+		background-color: #F9E878;
+		color: #fff;
+
+		&:hover {
+			color: #fff;
+		}
+	}
+}
+
+.showSweetAlert {
+	p {
+		font-size: 12px !important;
+	}
+
+	.sa-confirm-button-container {
+		.confirm {
+			background-color: #F9E878 !important;
+			color: #000 !important;
+		}
+	}
+}

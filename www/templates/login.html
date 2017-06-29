@@ -1,0 +1,24 @@
+<ion-view class="login">
+  <div class="logo">
+    <p>Your Routes</p>
+    <img src="img\logo.png">
+  </div>
+  <!-- Campo usuario -->
+  <div class="list list-inset login">
+    <label class="item item-input">
+      <i class="icon ion-android-person placeholder-icon"></i>
+      <input type="text" placeholder="Usuário">
+    </label>
+  </div>
+  <!-- Campo senha -->
+  <div class="list list-inset password">
+    <label class="item item-input">
+      <i class="icon ion-ios-locked placeholder-icon"></i>
+      <input type="password" placeholder="Senha">
+    </label>
+  </div>
+  <div class="row">
+    <button type="button" class="button btn-login" ng-click="logar()">ENTRAR</button>
+  </div>
+  <a class="btn-cadastro" ui-sref="cadUsuario">Cadastrar-se?</a>
+</ion-view>

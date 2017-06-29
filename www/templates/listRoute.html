@@ -1,0 +1,24 @@
+<ion-view class="rotas" ng-init="buscaRotas()" view-title="Rotas">
+  <ion-content>
+    <button  class="button button-block btn-ordernar" cancel-search-button="Limpar" search-placeholder="Pesquisar" cancel-button="Cancelar" reset-button="Limpar" modal-select="" ng-model="filtro" options="filtros" has-search="true" modal-title="Selecione o Filtro">
+      ORDENAR POR: {{filtro}}
+      <div class="option">
+        {{option}}
+      </div>
+    </button>
+    <ion-list>
+      <ion-item class="list-routes" ng-repeat="rota in bancoRotas |  orderBy: filtro" can-swipe="swipe">
+        <img class="icon-routes" src="img/icons/icon-routes.png">
+        <ul style="list-style-type:none">
+          <li>Partida: {{rota.partida}}</li>
+          <li>Destino: {{rota.destino}}</li>
+          <li>Data de Partida: {{rota.datapartida | date: 'dd/MM/yyyy'}}</li>
+          <li>Data de Entrega: {{rota.dataentrega | date: 'dd/MM/yyyy'}}</li>
+        </ul>
+        <ion-option-button class="btn-info" ng-click="verificaRota(rota)">
+          <i class="icon ion-information-circled"></i>
+        </ion-option-button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

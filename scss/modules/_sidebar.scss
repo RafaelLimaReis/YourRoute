@@ -1,0 +1,98 @@
+.sidebar {
+	.info-user {
+		padding-bottom: 0 !important;
+		margin-bottom: 0 !important;
+
+		.item-divider {
+			border: 0;
+		}
+
+		.user {
+			background-color: #F2F2F2;
+			border: 0;
+			
+			img {
+				width: 40%;
+			}
+
+			p {
+				margin-top: 25px;
+				margin-left: 45%;
+				font-weight: 300;
+				strong {
+					font-weight: 500;
+					font-size: 20px;
+				}
+			}
+		}
+	}
+
+	.menu-list {
+		.item-icon-left {
+			background-color: #DEDADA !important;
+			border-bottom: 1px #fff solid;
+
+			a {
+				color: #585858;
+				background-color: #DEDADA !important;
+				border-bottom: 1px #fff solid;
+				height: 65px;
+				display: block;
+				padding-top: 22px;
+
+				i {
+					width: 10%;
+					padding-left: 6px;
+					color: #fff;
+					font-size: 20px;
+					text-align: left;
+				}
+			}
+		}
+		.paradas {
+			a {
+				padding-top: 10px;
+			}
+		}
+	}
+
+	.btn-logoff {
+		width: 100%;
+		height: 65px;
+		position: absolute;
+		// bottom: 0;
+		margin: 0;
+		padding-top: 10px;
+		border-color: transparent;
+		background-color: #ef473a;
+		color: #fff;
+		font-size: 20px;
+		text-align: left;
+
+		i {
+			width: 20%;
+			float: left;
+			text-align: right;
+			color: #fff;
+			text-align: right;
+		}
+
+		p {
+			width: 75%;
+			margin: 0;
+			float: left;
+			display: block;
+			text-align: center;
+		}
+	}
+
+	.bar-header {
+		h1 {
+			text-align: center;
+		}
+	}
+
+	.overflow-scroll {
+		overflow-y: hidden;
+	}
+}

@@ -1,0 +1,87 @@
+.login {
+	background: url('../img/login.jpg') no-repeat;
+	width: 100%;
+	background-position-x: -457px;
+	background-size: cover;
+
+	.logo {
+		p {
+			font-size: 0px;
+		}
+
+		img {
+			width: 150%;
+			left: -23%;
+			position: absolute;
+		}
+	}
+
+	.list-inset {
+		width: 75%;
+		left: 9%;
+		opacity: 0.9;
+	}
+
+	.login {
+		margin-top: 85%;
+		border-radius: 5px;
+
+		input {
+			text-align: center;
+			font-size: 16px;
+		}
+
+		i {
+			font-size: 20px;
+		}
+
+		@media (max-width: 360px) {
+			margin-top: 75%;
+		}
+		@media (max-height: 565px) {
+			margin-top: 55%;
+		}
+		@media (min-width: 680px) {
+			margin-top: 65%;
+		}
+	}
+
+	.password {
+		input {
+			text-align: center;
+			font-size: 16px;
+		}
+
+		i {
+			font-size: 20px;
+		}
+	}
+
+	.row {
+		display: block;
+		text-align: center;
+
+		@media (min-width: 680px) {
+			margin-top: 180px;
+		}
+	}
+	.btn-login {
+		width: 50%;
+		border-color: transparent;
+		background-color: #96F978;
+		color: #fff;
+
+		&:hover {
+			color: #fff;
+		}
+	}
+
+	.btn-cadastro {
+		display: block;
+		margin-top: 50px;
+		text-align: center;
+		color: #fff;
+		font-size: 16px;
+		text-decoration: none;
+	}
+}

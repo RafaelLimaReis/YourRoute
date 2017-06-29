@@ -1,0 +1,36 @@
+<ion-view class="cadastro">
+  <div class="logo">
+    <p>Your Routes</p>
+    <img src="img\logo.png">
+  </div>
+  <!-- Campo CPF -->
+  <div class="list list-inset cpf">
+    <label class="item item-input">
+      <i class="icon ion-card placeholder-icon"></i>
+      <input type="text" placeholder="CPF">
+    </label>
+  </div>
+
+  <!-- Campo email -->
+  <div class="list list-inset email">
+    <label class="item item-input">
+      <i class="icon ion-ios-at placeholder-icon"></i>
+      <input type="text" placeholder="Email">
+    </label>
+  </div>
+
+  <!-- Campo email -->
+  <div class="list list-inset senha">
+    <label class="item item-input">
+      <i class="icon ion-ios-locked placeholder-icon"></i>
+      <input type="text" placeholder="Senha">
+    </label>
+  </div>
+
+  <div class="row">
+    <button type="button" class="button btn-cadastrar" ng-click="cadastrar()">CADASTRAR</button>
+  </div>
+  <div class="row">
+    <button type="button" class="button btn-voltar" ui-sref="login">VOLTAR</button>
+    </div>
+</ion-view>

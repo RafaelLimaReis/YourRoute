@@ -1,0 +1,26 @@
+<ion-nav-bar class="bar bar-header bar-stable">
+  <ion-nav-buttons side="left">
+    <button class="button button-icon ion-navicon-round" menu-toggle></button>
+  </ion-nav-buttons>
+  <ion-nav-title>
+    <h1 class="title">Detalhes da Rota</h1>
+  </ion-nav-title>
+</ion-nav-bar>
+
+<ion-view class="detalhes-rotas" view-title="Detalhes da Rota">
+  <ion-content>
+    <img class="icon-routes" src="img/icons/icon-routes.png">
+    <hr>
+    <ul class="list">
+      <li class="item">Partida: {{detalheRota.partida}}</li>
+      <li class="item">Destino: {{detalheRota.destino}}</li>
+      <li class="item">Data de Partida: {{detalheRota.datapartida | date: 'dd/MM/yyyy'}}</li>
+      <li class="item">Data de Entrega: {{detalheRota.dataentrega | date: 'dd/MM/yyyy'}}</li>
+    </ul>
+    <hr>
+    <button type="button" class="button button-block btn-adicionar" ng-if="detalheRota.chave == false" ng-click="localRota(detalheRota)"> + MINHAS ROTAS</button>
+    <button type="button" class="button button-block btn-remover" ng-if="detalheRota.chave == true" ng-click="removeLocalRota(detalheRota)"> REMOVER </button>
+    <button type="button" class="button button-block btn-iniciar" ng-if="detalheRota.chave == true" ng-click="visualizarRota(detalheRota)"> INICIAR ROTA </button>
+    <button type="button" class="button button-block btn-voltar" ng-click="$ionicGoBack()"> VOLTAR </button>
+  </ion-content>
+</ion-view>

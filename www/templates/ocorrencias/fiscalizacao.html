@@ -1,0 +1,45 @@
+<ion-view class="ocorrencia-fiscalizacao" view-title="Diario de Bordo" ng-init="getFiscalizacao()">
+	<ion-content>
+		<div class="list">
+			<div class="item item-divider fiscalizacao-title" >
+				<img class="icon-routes" src="img/icons/inspection.png">
+				<p>Fiscalização</p>
+			</div>
+			<div class="item fiscalizacao-cabecalho">
+				<div class="row">
+					<div class="col">
+						Data
+					</div>
+					<div class="col">
+						Hora
+					</div>
+					<div class="col">
+						Fiscalização
+					</div>
+					<div class="col">
+
+					</div>
+				</div>
+
+				<div class="row" ng-repeat="fiscalizacao in info">
+					<div class="col">
+						{{fiscalizacao.date | date: 'dd/MM/yyyy'}}
+					</div>
+					<div class="col">
+						{{fiscalizacao.hora | date: 'HH:mm'}}
+					</div>
+					<div class="col">
+						{{fiscalizacao.tipo}}
+					</div>
+					<div class="col">
+						<button class="button icon ion-trash-a" ng-click="deleteFiscalizacao(fiscalizacao)"></button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="btn-footer">
+			<button class="button button-block btn-novo" ui-sref="menu.cadFiscalizacao"> Inserir Novo Registro </button>
+			<button class="button button-block btn-voltar" ui-sref="menu.ocorrencias"> Voltar </button>
+		</div>
+	</ion-content>
+</ion-view>

@@ -1,0 +1,48 @@
+<ion-view class="ocorrencia-abastecimento" view-title="Diario de Bordo" ng-init="getAbastecimento()">
+	<ion-content>
+		<div class="list">
+			<div class="item item-divider abastecimento-title" >
+				<img class="icon-routes" src="img/icons/supply.png">
+				<p>Abastecimento</p>
+			</div>
+			<div class="item abastecimento-cabecalho">
+				<div class="row">
+					<div class="col">
+						Data
+					</div>
+					<div class="col">
+						Hora
+					</div>
+					<div class="col">
+						KM
+					</div>
+					<div class="col">
+						Valor
+					</div>
+				</div>
+
+				<div class="row" ng-repeat="abastecimento in info">
+					<div class="col">
+						{{abastecimento.date | date: 'dd/MM/yyyy'}}
+					</div>
+					<div class="col">
+						{{abastecimento.hora | date: 'HH:mm'}}
+					</div>
+					<div class="col">
+						{{abastecimento.km}}
+					</div>
+					<div class="col">
+						{{abastecimento.valor}}
+					</div>
+					<div class="col">
+						<button class="button icon ion-trash-a" ng-click="deleteAbastecimento(abastecimento)"></button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="btn-footer">
+			<button class="button button-block btn-novo" ui-sref="menu.cadAbastecimento"> Inserir Novo Registro </button>
+			<button class="button button-block btn-voltar" ui-sref="menu.ocorrencias"> Voltar </button>
+		</div>
+	</ion-content>
+</ion-view>

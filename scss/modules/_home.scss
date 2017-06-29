@@ -1,0 +1,19 @@
+.home {
+	ion-content{ 
+		background: url('../img/home.png') no-repeat;
+	}	
+	.minhas-rotas {
+		width: 100%;
+		position: absolute;
+		height: 175px;
+		top: 175px;
+		background: transparent;
+	}
+	.sincronizacao {
+		position: absolute;
+		height: 175px;
+		top: 350px;
+		background: transparent;
+		width: 48%;
+	}
+}

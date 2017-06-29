@@ -1,0 +1,62 @@
+<ion-side-menus data-ng-init="dadosLocalizacao()" class="sidebar">
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar bar-header bar-stable">
+      <ion-nav-buttons side="left">
+        <button class="button button-icon ion-navicon-round" menu-toggle></button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="Conteudo"></ion-nav-view>
+  </ion-side-menu-content>
+  <ion-side-menu> <!-- inicio do menu -->
+    <ion-header-bar class="bar bar-stable">
+      <h1 class="title" align-title="center">Menu</h1>
+    </ion-header-bar>
+    <ion-content>
+      <div class="list info-user">
+        <div class="item item-divider">
+          <h4>{{dados}}</h4>
+        </div>
+        <div class="item user">
+          <img src="img/icons/user.png" align="left">
+          <p>
+            <strong>Rafael Lima</strong><br>Motorista
+          </p>
+        </div>
+      </div>
+      <ion-list class="menu-list">
+        <ion-item menu-close class="item-icon-left" ui-sref="menu.home">
+          <i class="icon ion-ios-home placeholder-icon"></i>
+          Home
+        </ion-item>
+        <ion-item menu-close class="item-icon-left" ui-sref="menu.myRoutes">
+          <i class="icon ion-ios-location placeholder-icon"></i>
+          Minhas Rotas
+        </ion-item>
+        <ion-item menu-close class="item-icon-left" ui-sref="menu.listRoute">
+          <i class="icon ion-ios-location placeholder-icon"></i>
+          Rotas
+        </ion-item>
+        <ion-item menu-close class="item-icon-left paradas" ui-sref="#">
+          <i class="icon ion-map placeholder-icon"></i>
+          Paradas <br>
+          <sub>(Postos, Alimentação e Hoteis)</sub>
+        </ion-item>
+        <ion-item menu-close class="item-icon-left" ui-sref="#">
+          <i class="icon ion-settings placeholder-icon"></i>
+          Configurações
+        </ion-item>
+        <ion-item menu-close class="item-icon-left" ui-sref="menu.ajuda">
+          <i class="icon ion-help placeholder-icon"></i>
+          Informações
+        </ion-item>
+        <!-- <ion-item menu-close class="item-icon-left" ui-sref="login">
+
+        </ion-item> -->
+      </ion-list>
+      <a ui-sref="login" class="button button-full btn-logoff">
+          <i class="icon ion-power placeholder-icon"></i>
+          <p>Sair</p>
+      </a>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

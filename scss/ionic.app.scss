@@ -1,0 +1,67 @@
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+
+For example, you might change some of the default colors:
+
+$light:                           #fff !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #387ef5 !default;
+$calm:                            #11c1f3 !default;
+$balanced:                        #33cd5f !default;
+$energized:                       #ffc900 !default;
+$assertive:                       #ef473a !default;
+$royal:                           #886aea !default;
+$dark:                            #444 !default;
+*/
+
+// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+
+// Include all of Ionic
+@import "www/lib/ionic/scss/ionic";
+
+// CSS das telas do projeto
+@import "modules/_login";
+@import "modules/_cadastro";
+@import "modules/_home";
+@import "modules/_sidebar";
+@import "modules/_rotas";
+@import "modules/_minhas-rotas";
+@import "modules/_detalhes-rotas";
+@import "modules/_map";
+@import "modules/_ocorrencias";
+@import "modules/ocorrencias/_ocorrencia-tempo";
+@import "modules/ocorrencias/_ocorrencia-carga";
+@import "modules/ocorrencias/_ocorrencia-alimentacao";
+@import "modules/ocorrencias/_ocorrencia-pernoite";
+@import "modules/ocorrencias/_ocorrencia-manutencao";
+@import "modules/ocorrencias/_ocorrencia-abastecimento";
+@import "modules/ocorrencias/_ocorrencia-fiscalizacao";
+@import "modules/ocorrencias/_ocorrencia-cliente";
+@import "modules/ocorrencias/registros/_reg-tempo";
+@import "modules/ocorrencias/registros/_reg-carga";
+@import "modules/ocorrencias/registros/_reg-alimentacao";
+@import "modules/ocorrencias/registros/_reg-pernoite";
+@import "modules/ocorrencias/registros/_reg-manutencao";
+@import "modules/ocorrencias/registros/_reg-abastecimento";
+@import "modules/ocorrencias/registros/_reg-fiscalizacao";
+@import "modules/ocorrencias/registros/_reg-cliente";
+
+// Fonte padrão do projeto
+@font-face {
+  font-family: "Segoe UI";
+}
+
+
+.modal-backdrop {
+	.scroll-content {
+		background-color: #E4E4E4;
+	}
+	.list {
+		.item {
+			background-color: #1E8CBE;
+			color: #fff;
+		}
+	}
+}

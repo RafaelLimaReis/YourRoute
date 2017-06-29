@@ -1,0 +1,36 @@
+<ion-nav-bar class="bar bar-header bar-stable">
+  <ion-nav-buttons side="left">
+    <button class="button button-icon ion-navicon-round" menu-toggle></button>
+  </ion-nav-buttons>
+  <ion-nav-title>
+    <h1 class="title">Minhas Rotas</h1>
+  </ion-nav-title>
+</ion-nav-bar>
+<ion-view class="minhas-rotas" view-title="Minhas Rotas">
+  <ion-content>
+    <ion-refresher
+  pulling-text="Recarregar..."
+  on-refresh="buscaRotasLocal()">
+</ion-refresher>
+    <button  class="button button-block btn-ordernar" cancel-search-button="Limpar" search-placeholder="Pesquisar" cancel-button="Cancelar" reset-button="Limpar" modal-select="" ng-model="filtro" options="filtros" has-search="true" modal-title="Selecione o Filtro">
+      ORDENAR POR: {{filtro}}
+      <div class="option">
+        {{option}}
+      </div>
+    </button>
+    <ion-list ng-init="buscaRotasLocal()">
+      <ion-item class="list-routes" ng-repeat="rota in localRotas | orderBy:filtro " can-swipe="swipe">
+        <img class="icon-routes" src="img/icons/icon-routes.png">
+        <ul style="list-style-type:none">
+          <li>Partida: {{rota.partida}}</li>
+          <li>Destino: {{rota.destino}}</li>
+          <li>Data de Partida: {{rota.datapartida | date: 'dd/MM/yyyy'}}</li>
+          <li>Data de Entrega: {{rota.dataentrega | date: 'dd/MM/yyyy'}}</li>
+        </ul>
+        <ion-option-button class="btn-info" ng-click="verificaRota(rota)">
+          <i class="icon ion-information-circled"></i>
+        </ion-option-button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,86 @@
+.reg-manutencao {
+	.list {
+		min-height: 560px;
+		.manutencao-title {
+			background-color: #1E8CBE;
+			.icon-routes {
+				width: 10%;
+				display: block;
+				float: left;
+				margin-left: 15px;
+			}
+
+			p {
+				text-align: center;
+				font-size: 24px;
+				color: #fff;
+				display: table-cell;
+				vertical-align: middle;
+				height: 40px;
+				width: 53%;
+			}
+		}
+		.manutencao-reg {
+			margin: 0;
+			padding: 0;
+
+			label {
+				margin: 0;
+				padding: 0;
+				span {
+					max-width: 100%;
+					width: 100%;
+					background-color: #DEDADA;
+					color: #757575;
+					text-align: center;
+
+				}
+				input {
+					max-width: 100%;
+					width: 100%;
+					margin: 0;
+					padding: 0;
+					text-align: center;
+				}
+
+				select {
+					border: 0;
+					text-align: center;
+				}
+			}
+		}
+	}
+
+	.btn-footer {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		z-index: 999;
+
+		.btn-salvar {
+			width: 80%;
+			margin-left: 9%;
+			border-color: transparent;
+			border-radius: 0;
+			background-color: #49E25E;
+			color: #fff;
+
+			&:hover {
+				color: #fff;
+			}
+		}
+
+		.btn-cancelar {
+			width: 80%;
+			margin-left: 9%;
+			border-color: transparent;
+			border-radius: 0;
+			background-color: #FF6060;
+			color: #fff;
+
+			&:hover {
+				color: #fff;
+			}
+		}
+	}
+}
